@@ -1,5 +1,391 @@
-body {}
+/* GLOBAL */
 
-h1 {
-    color: blue;
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Display, Justify, Align : Permet d'aligner les éléments et de créer l'espace Logo - List */
+}
+
+header .logo{
+    display: flex;
+    /* Display, Justify, Align : Permet d'aligner les éléments */
+    height: 30px;
+    padding-left: 45px;
+}
+
+header ul {
+    display: flex;
+    /* Display : Permet d'aligner les éléments */
+    list-style: none;
+}
+
+ul li {
+    padding: 50px;
+    border-top: solid 2px transparent;
+    margin: 0px 20px;
+}
+
+header ul li:hover {
+    border-color: #0065FC;
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+header ul li a:hover {
+    color: #0065FC;
+    text-decoration: none;
+}
+
+/* MAIN */
+
+main{
+    width: 98%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* SECTION SEARCH */
+
+.search {
+    display: flex;
+    /* Display : Permet d'aligner les éléments */
+    margin: 20px 36px;
+}
+
+.search .fa-map-marker-alt {
+    display: flex;
+    background: #F2F2F2;
+    border: 10px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search-input {
+    border: 2px #F2F2F2 solid;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    height: 40px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.search-button {
+    background: #0065FC;
+    border: 10px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.search-bar h1 {
+    font-size: 22px;
+    margin: 0px 36px;
+}
+
+.search-bar p {
+    font-size: 18px;
+    margin: 0px 36px;
+}
+
+.search-button-icon {
+    display:none;
+}
+
+/* SECTION FILTER */
+
+.filter {
+    display: flex;
+    align-items: center;
+    /* Display, Align : Permet d'aligner les éléments */
+    height: 25px;
+    margin: 30px 36px;
+}
+
+.filter ul {
+    display: flex;
+    /* Permet d'aligner les éléments */
+}
+
+.filter ul li {
+    padding: 15px;
+    list-style-type: none;
+    border: solid 3px #F2F2F2;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.filter ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 700;
+}
+
+.filter ul li:hover {
+  cursor: pointer;
+  background: #DEEBFF;
+}
+
+.blue-icon {
+    color: #0065FC;
+    width: 30px;
+}
+
+/* INFO */
+
+.info {
+    display: flex;
+    align-items:center;
+    /* Display, Align : Permet d'aligner les éléments de la div info */
+}
+
+.info .fa-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Display, Align, Justify : Permet de centrer le i dans le cercle*/
+    border: 2px solid #D9D9D9;
+    border-radius:50px 50px 50px 50px;
+    margin-left: 36px;
+    color: #0065fc;
+    width: 24px;
+    height: 24px;
+}
+
+.info p{
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    padding: 15px;
+}
+
+/* SECTION REFERENCEE */
+
+#section-reference{
+    display: flex;
+    justify-content: space-between;
+    /* Display, Justify : Permet d'espacer les deux blocs */
+    margin: 0px 36px;
+}
+
+#section-reference h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    color: black;
+    padding: 30px 20px 15px 36px;
+}
+
+#section-reference a{
+    text-decoration: none;
+}
+
+#section-reference .full{
+    color: #0065FC;
+}
+
+#section-reference .empty {
+    color: #d9d9d9;
+}
+
+/* LOGDING */
+
+.section-logding{
+    display:flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.lodging-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article-lodging{
+    height: 170px;
+    margin: 20px;
+    background-color:  #ffff;
+    border: 4px solid #ffff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.article-lodging img{
+    width: 200px;
+    height: 110px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.lodging{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+
+.lodging h3{
+    font-size:16px;
+    color: black;
+}
+
+.lodging p{
+    font-size: 14px;
+    color: black;
+}
+
+.lodging .stars{
+    display: flex;
+    padding-top: 5px;
+}
+
+
+.show-more{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0px 30px 10px;
+}
+
+/* POPULAR */
+
+.section-popular{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 35%;
+}
+
+.fa-chart-line{
+    color: #0065FC;
+}
+
+.article-popular{
+    height: 125px;
+    margin: 20px;
+    background-color: #ffff;
+    border: 4px solid #ffff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+
+.article-popular img{
+    width: 130px;
+    height: 120px;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+
+.article-popular a{
+    display: flex;
+}
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.popular h3{
+    font-size:16px;
+    color: black;
+    padding: 15px 0px 5px 0px;
+}
+
+.popular p{
+    font-size:14px;
+    color: black;
+    padding: 5px 0px 0px 0px;
+
+}
+
+.popular .stars{
+    display: flex;
+    padding: 40px 0px 0px 0px;
+}
+
+/* Activities */
+
+#section-activities{
+    margin:30px 0px;
+}
+.activities h2{
+    font-size: 22px;
+    color: black;
+    padding: 50px 20px 30px 36px;
+}
+.activities-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.article-activities {
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.article-activities a{
+    text-decoration: none;
+}
+
+.article-activities img{
+    height: 445px;
+    width: 300px;
+    border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
+}
+
+.article-activities h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+    padding: 5px 25px;
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content:space-around;
+    background: #F2F2F2;
+    margin: 50px 30px 0px 30px;
+    height: 200px;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer  a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer h2{
+    font-size: 16px;
+    padding: 15px 0px
+}
+
