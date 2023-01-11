@@ -16,7 +16,7 @@ header {
 
 header .logo{
     display: flex;
-    /* Display, Justify, Align : Permet d'aligner les éléments */
+    /* Display : Permet d'aligner le logo à la list */
     height: 30px;
     padding-left: 45px;
 }
@@ -65,7 +65,6 @@ main{
 }
 
 .search .fa-map-marker-alt {
-    display: flex;
     background: #F2F2F2;
     border: 10px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
@@ -186,6 +185,7 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* Display, Justify, Align : Permet d'espacer les deux blocs et d'aligner les élements */
     font-size: 22px;
     color: black;
     padding: 30px 20px 15px 36px;
@@ -206,8 +206,6 @@ input::placeholder {
 /* LOGDING */
 
 .section-logding{
-    display:flex;
-    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 60%;
@@ -217,6 +215,7 @@ input::placeholder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* Display, flex-wrap, Justify : Permet d'aligner les blocs sur plusieurs lignes et d'espacer les élements */
 }
 
 .article-lodging{
@@ -236,9 +235,6 @@ input::placeholder {
 }
 
 .lodging{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
     padding-left: 10px;
 }
 
@@ -257,7 +253,6 @@ input::placeholder {
     padding-top: 5px;
 }
 
-
 .show-more{
     text-decoration: none;
     color:black;
@@ -271,7 +266,7 @@ input::placeholder {
 .section-popular{
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 35%;
+    width: 37%;
 }
 
 .fa-chart-line{
@@ -287,6 +282,11 @@ input::placeholder {
     box-shadow: 1px 1px 10px grey;
 }
 
+.article-popular a{
+    display: flex;
+    /* Display : Permet de mettre les élements à coter de l'img */
+    width: 450px
+}
 
 .article-popular img{
     width: 130px;
@@ -295,13 +295,7 @@ input::placeholder {
     object-fit: cover;
 }
 
-.article-popular a{
-    display: flex;
-}
-
 .popular{
-    display: flex;
-    flex-direction: column;
     padding-left: 10px;
 }
 
@@ -315,7 +309,6 @@ input::placeholder {
     font-size:14px;
     color: black;
     padding: 5px 0px 0px 0px;
-
 }
 
 .popular .stars{
@@ -323,10 +316,10 @@ input::placeholder {
     padding: 40px 0px 0px 0px;
 }
 
-/* Activities */
+/* ACTIVITIES */
 
 #section-activities{
-    margin:30px 0px;
+    margin:30px 36px;
 }
 .activities h2{
     font-size: 22px;
@@ -335,8 +328,8 @@ input::placeholder {
 }
 .activities-card{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    /* Display, Justify : Permet d'aligner et espacer les éléments */
 }
 
 .article-activities {
@@ -369,14 +362,16 @@ input::placeholder {
 .footer{
     display: flex;
     justify-content:space-around;
+    /* Display, Justify : Permet d'aligner et espacer les éléments */
     background: #F2F2F2;
-    margin: 50px 30px 0px 30px;
+    margin: 50px 60px 0px 60px;
     height: 200px;
 }
 
 .footer-list{
     display: flex;
     flex-direction: column;
+    /* Display, Flex : Permet de mettre en colonne les éléments */
 }
 
 .footer  a{
@@ -388,4 +383,3 @@ input::placeholder {
     font-size: 16px;
     padding: 15px 0px
 }
-
