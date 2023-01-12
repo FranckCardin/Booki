@@ -14,7 +14,7 @@ header {
     /* Display, Justify, Align : Permet d'aligner les éléments et de créer l'espace Logo - List */
 }
 
-header .logo{
+header img{
     display: flex;
     /* Display : Permet d'aligner le logo à la list */
     height: 30px;
@@ -29,7 +29,7 @@ header ul {
 
 ul li {
     padding: 50px;
-    border-top: solid 2px transparent;
+    border-top: solid 3px transparent;
     margin: 0px 20px;
 }
 
@@ -169,7 +169,7 @@ input::placeholder {
     font-weight: 400;
     font-size: 16px;
     color: black;
-    padding: 15px;
+    padding: 30px;
 }
 
 /* SECTION REFERENCEE */
@@ -258,7 +258,7 @@ input::placeholder {
     color:black;
     font-size: 18px;
     font-weight: bold;
-    padding: 15px 0px 30px 10px;
+    padding: 15px 0px 30px 25px;
 }
 
 /* POPULAR */
@@ -365,7 +365,7 @@ input::placeholder {
     /* Display, Justify : Permet d'aligner et espacer les éléments */
     background: #F2F2F2;
     margin: 50px 60px 0px 60px;
-    height: 200px;
+    height: 125px;
 }
 
 .footer-list{
@@ -377,9 +377,14 @@ input::placeholder {
 .footer  a{
     text-decoration: none;
     color: black;
+    padding: 5px
 }
 
 .footer h2{
     font-size: 16px;
     padding: 15px 0px
 }
+
+/* MEDIA QUERIES PAD */
+
+/* MEDIA QUERIES MOBILE */
