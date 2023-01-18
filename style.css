@@ -452,13 +452,17 @@ input::placeholder {
     }
 
     .article-popular{
-        width: 30%;
-        margin: 15px
+        width: 100%;
+        margin: 10px;
     }
 
     .article-popular img{
         width: 70px;
         height: 120px;
+    }
+
+    .popular .stars{
+        padding-top: 35px
     }
 
     .article-activities{
@@ -507,7 +511,7 @@ input::placeholder {
     }
 
     .filter{
-        margin: 15px 0px 180px 30px;
+        margin: 15px 0px 200px 30px;
         flex-direction: column;
         align-items: baseline;
     }
@@ -542,6 +546,7 @@ input::placeholder {
     }
 
     .section-popular{
+        width: 100%;
         margin-bottom: 50px;
         border-radius: 0px;
     }
@@ -552,7 +557,8 @@ input::placeholder {
     }
 
     .article-popular{
-        width: 90%;
+        width: 95%;
+        margin: 10px 10px;
     }
 
     .article-popular img{
