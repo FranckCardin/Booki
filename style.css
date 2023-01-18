@@ -149,6 +149,7 @@ input::placeholder {
 .blue-icon {
     color: #0065FC;
     width: 30px;
+    padding-right: 5px;
 }
 
 /* INFO */
@@ -221,7 +222,7 @@ input::placeholder {
 .lodging-card{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 10px;
     /* Display, flex-wrap, Justify : Permet d'aligner les blocs sur plusieurs lignes et d'espacer les élements */
 }
 
@@ -327,7 +328,7 @@ input::placeholder {
 
 .popular .stars{
     display: flex;
-    padding-top: 50px
+    padding-top: 50px;
 
 }
 
@@ -439,8 +440,18 @@ input::placeholder {
         margin-bottom: 50px;
     }
 
+    .lodging-card{
+        gap: 10px;
+    }
+
     .article-lodging{
         margin: 8px;
+        padding: 0px 8px;
+    }
+
+    .article-lodging img{
+        width: 200px;
+        height: 110px;
     }
 
     .section-popular{
@@ -511,18 +522,19 @@ input::placeholder {
     }
 
     .filter{
-        margin: 15px 0px 200px 30px;
+        margin: 15px 0px 100px 30px;
         flex-direction: column;
         align-items: baseline;
     }
 
     .filter ul{
         flex-wrap: wrap;
-        width: 65%;
+        width: 100%;
     }
 
     .filter ul li{
         padding: 0px 10px;
+        width: 40%;
     }
 
     .info{
@@ -564,6 +576,10 @@ input::placeholder {
     .article-popular img{
         width: 137px;
         height: 120px;
+    }
+
+    .popular .stars2{
+        padding-top: 55px;
     }
 
     .section-lodging{
