@@ -245,6 +245,7 @@ input::placeholder {
     height: 110px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
+    padding: 0px;
 }
 
 .lodging{
@@ -440,18 +441,14 @@ input::placeholder {
         margin-bottom: 50px;
     }
 
-    .lodging-card{
-        gap: 10px;
-    }
-
     .article-lodging{
         margin: 8px;
-        padding: 0px 8px;
+        width: 30%;
     }
 
     .article-lodging img{
-        width: 200px;
-        height: 110px;
+        width: 215px;
+        height: 110px
     }
 
     .section-popular{
