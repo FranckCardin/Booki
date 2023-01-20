@@ -122,13 +122,14 @@ input::placeholder {
 }
 
 .filter ul {
-    display: flex
+    display: flex;
     /* Permet d'aligner les éléments */
+    padding-left: 15px;
 }
 
 .filter ul li {
     padding: 15px;
-    margin: 10px;
+    margin-left: 15px;
     list-style-type: none;
     border: solid 3px #F2F2F2;
     border-radius: 30px 30px 30px 30px;
@@ -149,7 +150,6 @@ input::placeholder {
 .blue-icon {
     color: #0065FC;
     width: 30px;
-    padding-right: 5px;
 }
 
 /* INFO */
@@ -423,13 +423,18 @@ input::placeholder {
     }
 
     .filter ul{
-        height: 60px;
+        height: 45px;
+        padding-left: 15px;
     }
 
     .filter ul li{
         display: flex;
-        align-items:center;
-        width: 130%;
+        align-items: center;
+        margin-left: 10px
+    }
+
+    .filter ul li a{
+        font-size: 14px;
     }
 
     #section-reference{
@@ -530,8 +535,17 @@ input::placeholder {
     }
 
     .filter ul li{
-        padding: 0px 10px;
-        width: 40%;
+        padding: 10px 10px;
+        margin: 5px;
+        width: 45%;
+    }
+
+    .filter h2{
+        padding-left: 10px;
+    }
+
+    .filter ul li a {
+        font-size: 11px;
     }
 
     .info{
@@ -626,6 +640,10 @@ input::placeholder {
     .footer{
         flex-direction: column;
         height: 100%;
-        margin:auto;
+        margin: auto;
+    }
+
+    .footer-list{
+        margin: 0px 15px;
     }
 }
